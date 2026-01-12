@@ -1,13 +1,13 @@
 import java.util.Arrays;
-public class ceiling {
+public class floor {
     public static void main(String[] args) {
         
         int[] arr={1,3,5,7,8,9,12,34};
         int target=10;
-        int ans=ceiling(arr,target);
+        int ans=floor(arr,target);
         System.out.println(arr[ans]);
     }
-    static int ceiling(int[]arr,int target){
+    static int floor(int[]arr,int target){
 
         if (target>arr[arr.length-1]){
             return-1;
@@ -30,7 +30,8 @@ public class ceiling {
             }
             }
         //if target is greater than the greatest element in the array
-        return start;
+        return end;
         }
     }
+
 
