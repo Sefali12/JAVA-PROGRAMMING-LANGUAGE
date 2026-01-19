@@ -33,7 +33,7 @@ public class removeduplicate {
     }
 
     public static void main(String[] args) {
-        // Example: [1,1,2]
+        
         ListNode head = new ListNode(1);
         head.next = new ListNode(1);
         head.next.next = new ListNode(2);
