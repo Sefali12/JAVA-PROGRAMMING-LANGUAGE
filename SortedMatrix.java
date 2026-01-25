@@ -28,7 +28,14 @@ public class SortedMatrix {
             return new int[]{-1,-1};
         }
 
-        stat
+        static int[] search(int[][] matrix,int target){
+            int rows=matrix.length;
+            int cols=matrix[0].length;
+
+            if (rows==1){
+                return BinarySearch( matrix,0,cols-1,target)
+            }
+        }
     }
     }
     
