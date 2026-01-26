@@ -8,7 +8,7 @@ public class LinkedArrayList {
         LinkedList <Integer> list=new LinkedList<>();
         for(int i=0;i<5;i++){
             System.out.println("Enter element " + (i+1) + ": ");
-            list.add(in.nextInt());            // Here you would typically add the element to the LinkedList
+            list.add(in.nextInt());            
         }
         for( int i =0;i<5;i++){
             System.out.println(list.get(i));
