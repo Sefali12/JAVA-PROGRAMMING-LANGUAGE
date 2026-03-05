@@ -11,6 +11,7 @@ public class PreetyPrinting {
 
         }
         System.out.println(builder.toString());
+        builder.reverse();
 
 
     }
