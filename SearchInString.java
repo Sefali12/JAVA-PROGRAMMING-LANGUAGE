@@ -13,6 +13,6 @@ public class SearchInString {
                 return true;
             }
         }
-        return false;//not found the element
+        return false;//not found the element in the string
     }
 }
