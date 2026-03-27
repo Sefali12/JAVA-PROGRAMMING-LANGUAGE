@@ -5,10 +5,10 @@ public class SumOfDigits {
         System.out.println(ans);
     }
     static int sum(int n){
-        if(n<=0){
-            return 0;
+        if(n==0){
+            return 1;
         }
-        return (n%10) + (sum(n/10));
+        return (n%10) * (sum(n/10));
     }
     
 }
