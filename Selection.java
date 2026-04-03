@@ -2,7 +2,9 @@ import java.util.Arrays;
 public class Selection {
     public static void main(String[] args) {
         int[] arr={1,3,7,8,4,9};
-        selectionSort(arr);
+        //selectionSort(arr);
+        //System.out.println(Arrays.toString(arr));
+        selectionrecur(arr,arr.length,0,0);
         System.out.println(Arrays.toString(arr));
     }
     static void selectionSort(int[] arr){
@@ -28,5 +30,27 @@ public class Selection {
 
     
     }
-}
+
+    static void selectionrecur(int[] arr,int r, int c,int max){
+        if(r==0){
+            return;
+        }
+        if(c<r){
+            if(arr[c]>arr[max]){
+                selectionrecur(arr,r,c+1,c);
+
+            }
+            else{
+                selectionrecur(arr,r,c+1,max);
+            }
+        }
+        else{
+            int temp=arr[max];
+            arr[max]=arr[r-1];
+            arr[r-1]=temp;
+            selectionrecur(arr,r-1,0,0);
+        }
+        }
+    }
+
     
