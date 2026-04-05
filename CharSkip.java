@@ -2,6 +2,7 @@ public class CharSkip {
     public static void main(String[] args){
         skip("","bccad");
         System.out.println(skipApple("","bcfappled"));
+        System.out.println(skipAppNotApple("","bccappytapple"));
 
     }
     static void skip(String p,String up){
@@ -30,5 +31,16 @@ public class CharSkip {
             return skipApple(p+up.charAt(0),up.substring(1));
         }
     }
+    static String skipAppNotApple(String p,String up){
+        if(up.isEmpty()){
+            return p;
+        }
+        if(up.startsWith("app") && !(up.startsWith("apple"))){
+            return skipAppNotApple(p,up.substring(3));        }
     
+    else{
+        return skipAppNotApple(p+up.charAt(0),up.substring(1));
+    }
+    
+}
 }
