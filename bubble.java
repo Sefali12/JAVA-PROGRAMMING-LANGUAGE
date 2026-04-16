@@ -2,8 +2,8 @@ import java.util.Arrays;
 public class bubble {
     public static void main(String[] args){
         int[] arr={1,4,6,3,7,2,5};
-        //bubbleSort(arr);
-       // System.out.println(Arrays.toString(arr));
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
         bubblerecur(arr,arr.length-1,0);
         System.out.print(Arrays.toString(arr));
 
